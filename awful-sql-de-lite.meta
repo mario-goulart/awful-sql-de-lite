@@ -1,0 +1,9 @@
+;;; awful-sql-de-lite.meta -*- scheme -*-
+
+((egg "awful-sql-de-lite.egg")
+ (synopsis "sql-de-lite support for awful")
+ (author "<a href=\"http://chicken.wiki.br/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
+ (license "BSD")
+ (category web)
+ (depends (awful "0.10") sql-de-lite)
+ (files "awful-sql-de-lite.scm" "awful-sql-de-lite.setup" "awful-sql-de-lite.html"))
