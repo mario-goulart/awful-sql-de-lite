@@ -6,4 +6,4 @@
  (license "BSD")
  (category web)
  (depends (awful "0.10") sql-de-lite)
- (files "awful-sql-de-lite.scm" "awful-sql-de-lite.setup" "awful-sql-de-lite.html"))
+ (files "awful-sql-de-lite.meta" "awful-sql-de-lite.scm" "awful-sql-de-lite.setup"))
