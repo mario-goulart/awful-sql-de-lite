@@ -1,9 +1,12 @@
-(module awful-sql-de-lite (enable-db)
+(module awful-sql-de-lite (enable-db switch-to-sql-de-lite-database)
 
 (import chicken scheme regex)
 (use awful sql-de-lite)
 
 (define (enable-db . ignore) ;; backward compatibility: `enable-db' was a parameter
+  (switch-to-sql-de-lite-database))
+
+(define (switch-to-sql-de-lite-database)
 
   (db-enabled? #t)
 
