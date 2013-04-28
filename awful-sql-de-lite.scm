@@ -17,9 +17,9 @@
   (db-inquirer (lambda (q #!key default values)
                  (if values
                      (apply query (append (list
-                                         (map-rows (lambda (data) data))
-                                         (sql (db-connection) q))
-                                        values))
+                                           (map-rows (lambda (data) data))
+                                           (sql (db-connection) q))
+                                          values))
                      (query (map-rows (lambda (data) data))
                             (sql (db-connection) q)))))
 
