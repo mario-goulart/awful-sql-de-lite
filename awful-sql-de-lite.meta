@@ -2,7 +2,7 @@
 
 ((egg "awful-sql-de-lite.egg")
  (synopsis "sql-de-lite support for awful")
- (author "<a href=\"http://wiki.call-cc.org/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
+ (author "Mario Domenech Goulart")
  (license "BSD")
  (category web)
  (depends (awful "0.10") sql-de-lite)
