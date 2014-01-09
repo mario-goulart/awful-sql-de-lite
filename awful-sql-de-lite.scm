@@ -28,6 +28,7 @@
            default
            result))))
 
+  ;; DEPRECATED
   (sql-quoter
    (lambda (data)
      (string-append "'" (string-substitute* (concat data) '(("'" . "''"))) "'")))
