@@ -20,10 +20,12 @@
             (if values
                 (apply query (append (list
                                       (map-rows (lambda (data) data))
-                                      (sql (db-connection) q))
+                                      (sql (db-connection)
+                                           ((db-query-transformer) q)))
                                      values))
                 (query (map-rows (lambda (data) data))
-                       (sql (db-connection) q)))))
+                       (sql (db-connection)
+                            ((db-query-transformer) q))))))
        (if (null? result)
            default
            result))))
