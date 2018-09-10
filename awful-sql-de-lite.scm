@@ -1,6 +1,6 @@
 (module awful-sql-de-lite (enable-db switch-to-sql-de-lite-database)
 
-(import chicken scheme regex)
+(import chicken scheme)
 (use awful sql-de-lite)
 
 (define (enable-db . ignore) ;; backward compatibility: `enable-db' was a parameter
@@ -29,11 +29,6 @@
        (if (null? result)
            default
            result))))
-
-  ;; DEPRECATED
-  (sql-quoter
-   (lambda (data)
-     (string-append "'" (string-substitute* (concat data) '(("'" . "''"))) "'")))
 
   (db-make-row-obj (lambda (q)
                      (error '$db-row-obj "Not implemented for sql-de-lite.")))
