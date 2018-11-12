@@ -1,0 +1,7 @@
+awful-sql-de-lite.build.sh
+awful-sql-de-lite.import.scm
+awful-sql-de-lite.import.so
+awful-sql-de-lite.install.sh
+awful-sql-de-lite.link
+awful-sql-de-lite.so
+awful-sql-de-lite.static.o
