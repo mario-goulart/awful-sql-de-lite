@@ -1,0 +1,11 @@
+;;; awful-sql-de-lite.egg -*- scheme -*-
+
+((synopsis "sql-de-lite support for awful")
+ (author "Mario Domenech Goulart")
+ (license "BSD")
+ (category web)
+ (dependencies awful sql-de-lite)
+ (component-options
+  (csc-options "-O3" "-d1"))
+ (components
+  (extension awful-sql-de-lite)))
