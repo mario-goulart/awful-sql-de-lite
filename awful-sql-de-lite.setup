@@ -5,4 +5,4 @@
 
 (install-extension 'awful-sql-de-lite
                    '("awful-sql-de-lite.so" "awful-sql-de-lite.import.so")
-                   '((version "0.7.0")))
+                   '((version "0.7.1")))
