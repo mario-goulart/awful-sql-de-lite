@@ -5,7 +5,7 @@
 (chicken-4
  (import chicken)
  (use awful sql-de-lite))
-(chicken-5
+((or chicken-5 chicken 6)
  (import (chicken base))
  (import awful sql-de-lite))
 (else
